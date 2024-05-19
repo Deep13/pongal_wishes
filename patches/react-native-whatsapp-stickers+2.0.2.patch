@@ -1,0 +1,31 @@
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build.gradle b/node_modules/react-native-whatsapp-stickers/android/build.gradle
+index 6561870..36a8916 100644
+--- a/node_modules/react-native-whatsapp-stickers/android/build.gradle
++++ b/node_modules/react-native-whatsapp-stickers/android/build.gradle
+@@ -12,12 +12,12 @@ buildscript {
+ apply plugin: 'com.android.library'
+ 
+ android {
+-    compileSdkVersion 23
+-    buildToolsVersion "23.0.1"
++    compileSdkVersion 31
++    buildToolsVersion "31.0.0"
+ 
+     defaultConfig {
+-        minSdkVersion 19
+-        targetSdkVersion 22
++        minSdkVersion 21
++        targetSdkVersion 31
+         versionCode 1
+         versionName "1.0"
+     }
+@@ -31,6 +31,7 @@ repositories {
+ }
+ 
+ dependencies {
+-    compile 'com.facebook.react:react-native:+'
++    //compile 'com.facebook.react:react-native:+'
++    implementation "com.facebook.react:react-native:+"
+ }
+   
+\ No newline at end of file
